@@ -22,6 +22,8 @@ public class BrokenLinkTest {
         this.driver.findElements(By.xpath("//*[@src]")).stream()
                 .map(y -> y.getAttribute("src"))
                 .forEach(y -> System.out.println(y));
+
+
     }
 
     @AfterTest
